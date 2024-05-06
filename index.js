@@ -528,6 +528,12 @@ function mapDraw(num) {
 				if((areaDataSet.has(101)) || (areaDataSet.has(102)) || (areaDataSet.has(103)) || (areaDataSet.has(104)) || areaData.length >= 4){
 					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
 					map.setView(initialLatLng, 4);
+			        }else if(areaData.length >= 2){
+					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
+					map.setView(initialLatLng, 7);
+				}else{
+					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
+					map.setView(initialLatLng, 9);
 				}
 		} else {
 			areaData = [0, 0]
