@@ -46,7 +46,6 @@ function mapDraw(num) {
 
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
-        console.log("A")
         L.geoJson(data, {
             style: function(feature) {
                 return{
@@ -62,7 +61,6 @@ function mapDraw(num) {
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9012.geojson", function (data) {
         L.geoJson(data, {
-            console.log("B")
             style: function(feature) {
                 return{
                 color: "#ffffff",
@@ -78,7 +76,6 @@ function mapDraw(num) {
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9013.geojson", function (data) {
         L.geoJson(data, {
-            console.log("C")
             style: function(feature) {
                 return{
                 color: "#ffffff",
@@ -93,7 +90,6 @@ function mapDraw(num) {
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9014.geojson", function (data) {
         L.geoJson(data, {
-            console.log("D")
             style: function(feature) {
                 return{
                 color: "#ffffff",
