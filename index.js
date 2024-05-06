@@ -172,7 +172,9 @@ function mapDraw(num) {
                 areaData = [0,0]
             }
         });
+    console.log(areaData)
     var areaDataSet = new Set(areaData);
+    console.log(areaDataSet)
     // GeoJSON データを読み込んで地図に追加
     $.getJSON("./prefectures.geojson", function (data) {
     // areaDataに含まれる値のセットを作成
