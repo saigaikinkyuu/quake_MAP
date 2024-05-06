@@ -1,5 +1,5 @@
 var map;
-var areaData = [];
+var areaData = [0];
 
 function mapDraw(num) {
     map = L.map('map', {
