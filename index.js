@@ -527,11 +527,11 @@ function mapDraw(num) {
 							}
 						}).addTo(map);
 					});
-			}
 		} else {
 			areaData = [0, 0]
 		}
 	});
+}
 
 function changeMap(i) {
 	console.log("C," + i)
