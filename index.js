@@ -20,11 +20,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -32,11 +32,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9012.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -45,11 +45,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9013.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -57,11 +57,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9014.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -69,11 +69,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9461.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -82,11 +82,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9462.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -95,11 +95,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9471.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -108,11 +108,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9472.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -121,11 +121,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9473.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -134,11 +134,11 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9474.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
             }
         }).addTo(map);
     });
@@ -147,11 +147,11 @@ function mapDraw(num) {
         $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9" + ("0" + pN).slice(-2) + "0.geojson", function (data) {
             L.geoJson(data, {
                 style: function(feature) {
-                    "color": "#ffffff",
-                    "weight": 1.5,
-                    "opacity": 1,
-                    "fillColor": "#3a3a3a",
-                    "fillOpacity": 1
+                  color: "#ffffff",
+                  weight: 1.5,
+                  opacity: 1,
+                  fillColor: "#3a3a3a",
+                  fillOpacity: 1
                 }
             }).addTo(map);
         });
