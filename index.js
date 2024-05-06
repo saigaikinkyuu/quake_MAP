@@ -295,7 +295,6 @@ function mapDraw(num) {
             }
         }).addTo(map);
     });
-    }
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9461.geojson", function (data) {
         L.geoJson(data, {
@@ -495,8 +494,7 @@ function mapDraw(num) {
             }
         }).addTo(map);
     });
-        
-    };
+}
 
 function changeMap(i) {
     console.log("C,"+i)
