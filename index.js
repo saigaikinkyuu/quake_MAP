@@ -1,4 +1,5 @@
 var map;
+var areaData
 
 function mapDraw(num) {
     map = L.map('map', {
@@ -49,7 +50,7 @@ function mapDraw(num) {
         $.getJSON("https://api.p2pquake.net/v2/history?codes=556&limit=1", function (datas) {
             if(datas[0]){
             var areas = datas[0].areas
-            var areaData = []
+            areaData = []
             var areaNum = 0
             for(var i = 0;i < areas.length;i++){
                 if("青森" === areas[i].pref){
@@ -168,7 +169,7 @@ function mapDraw(num) {
                 areaData.push(areas[i].pref)
             }
             }else {
-                var areaData = [0,0]
+                areaData = [0,0]
             }
         });
     // GeoJSON データを読み込んで地図に追加
