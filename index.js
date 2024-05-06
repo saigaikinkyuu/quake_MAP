@@ -19,13 +19,15 @@ function mapDraw(num) {
     // GeoJSON データを読み込んで地図に追加
     $.getJSON("./prefectures.geojson", function (data) {
         L.geoJson(data, {
-            style: {
-                "color": "#ffffff",
-                "weight": 1.5,
-                "opacity": 1,
-                "fillColor": "#3a3a3a",
-                "fillOpacity": 1
-            }
+            if(data.features[0].properties.name === "北海道"){
+              style: {
+                  "color": "#ffffff",
+                  "weight": 1.5,
+                  "opacity": 1,
+                  "fillColor": "#3a3a3a",
+                  "fillOpacity": 1
+              }
+          }
         }).addTo(map);
         
         var currentTime = new Date();
