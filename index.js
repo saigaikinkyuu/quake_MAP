@@ -25,6 +25,12 @@ function mapDraw(num) {
                 switch (feature.properties.pref) {
                     case 1:
                         return null; 
+                    case 13:
+                        return null;
+                    case 46:
+                        return null;
+                    case 47:
+                        return null;
                     default:
                         return {
                             color: "#ffffff",
@@ -155,35 +161,6 @@ function mapDraw(num) {
         }).addTo(map);
     });
     
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9131.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9312.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
     
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9313.geojson", function (data) {
