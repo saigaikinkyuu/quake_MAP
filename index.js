@@ -1,5 +1,5 @@
 var map;
-var areaData
+var areaData = [];
 
 function mapDraw(num) {
     map = L.map('map', {
@@ -48,9 +48,10 @@ function mapDraw(num) {
 
         // AMeDAS データを読み込み、円を追加(https://api.p2pquake.net/v2/history?codes=556&limit=1)
         $.getJSON("https://api-v2-sandbox.p2pquake.net/v2/history?codes=556&limit=1", function (datas) {
+            console.log(datas)
             if(datas[0]){
+                console.log("出力")
             var areas = datas[0].areas
-            areaData = []
             var areaNum = 0
             for(var i = 0;i < areas.length;i++){
                 if("青森" === areas[i].pref){
