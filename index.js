@@ -23,6 +23,9 @@ function mapDraw(num) {
                 console.log(feature.properties.pref + "," + feature.properties.name)
                 // 都道府県ごとに異なる色を割り当てる
                 switch (feature.properties.pref) {
+                    case 1:
+                        return null; 
+                    default:
                         return {
                             color: "#ffffff",
                             weight: 1.5,
