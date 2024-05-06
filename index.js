@@ -419,7 +419,7 @@ function mapDraw(num) {
                 fillOpacity: 1
                 }
                }else{
-                   console.log("失敗")
+                   console.log("失敗," + areaDataSet)
                 return{
                 color: "#ffffff",
                 weight: 1.5,
