@@ -15,6 +15,27 @@ function mapDraw(num) {
         position: 'bottomright',
         imperial: false
     }).addTo(map);
+    
+    // GeoJSON データを読み込んで地図に追加
+    $.getJSON("./prefectures.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                console.log(feature.properties.pref + "," + feature.properties.name)
+                // 都道府県ごとに異なる色を割り当てる
+                switch (feature.properties.pref) {
+                        style: function(feature) {
+                            return{
+                                color: "#ffffff",
+                                weight: 1.5,
+                                opacity: 1,
+                                fillColor: "#3a3a3a",
+                                fillOpacity: 1
+                            }
+                        }
+                }
+            }
+        }).addTo(map);
+    });
 
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
@@ -134,6 +155,51 @@ function mapDraw(num) {
     });
     
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9131.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9312.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9313.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9473.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
@@ -162,22 +228,6 @@ function mapDraw(num) {
             }
         }).addTo(map);
     });
-    for(var pN = 2;pN<46;pN++){    
-        // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-        $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9" + ("0" + pN).slice(-2) + "0.geojson", function (data) {
-            L.geoJson(data, {
-                style: function(feature) {
-                  return{
-                    color: "#ffffff",
-                    weight: 1.5,
-                    opacity: 1,
-                    fillColor: "#3a3a3a",
-                    fillOpacity: 1
-                  }
-                }
-            }).addTo(map);
-        });
-    }
         
         var currentTime = new Date();
         var currentMin = ('0' + currentTime.getMinutes()).slice(-2);
