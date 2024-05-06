@@ -45,7 +45,7 @@ function mapDraw(num) {
 	}
 
 	// AMeDAS データを読み込み、円を追加(https://api.p2pquake.net/v2/history?codes=556&limit=1)
-	$.getJSON("https://api-v2-sandbox.p2pquake.net/v2/history?codes=556&limit=1",
+	$.getJSON("https://api-v2-sandbox.p2pquake.net/v2/history?codes=556&limit=1&offset=2",
 		function(datas) {
 			console.log(datas)
 			if (datas[0]) {
@@ -528,7 +528,7 @@ function mapDraw(num) {
 				if((areaDataSet.has(101)) || (areaDataSet.has(102)) || (areaDataSet.has(103)) || (areaDataSet.has(104)) || areaData.length >= 4){
 					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
 					map.setView(initialLatLng, 4);
-			        }else if(areaData.length >= 2){
+				}else if(areaData.length >= 2){
 					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
 					map.setView(initialLatLng, 7);
 				}else{
