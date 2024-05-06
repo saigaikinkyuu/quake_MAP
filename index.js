@@ -535,7 +535,16 @@ function mapDraw(num) {
 					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
 					map.setView(initialLatLng, 9);
 				}
-		} else {
+				var shingenLatLng = new L.LatLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
+				var shingenIconImage = L.icon({
+					iconUrl: 'source/shingen.png',
+					iconSize: [40, 40],
+					iconAnchor: [20, 20],
+					popupAnchor: [0, -40],
+					zIndexOffset: 10000
+				});
+				var shingenIcon = L.marker(shingenLatLng, {icon: shingenIconImage }).addTo(map);
+			} else {
 			areaData = [0, 0]
 		}
 	});
