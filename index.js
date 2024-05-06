@@ -166,7 +166,7 @@ function mapDraw(num) {
                 }else if("大東島" === areas[i].pref){
                     areaNum = 402
                 }
-                areaData.push(areas[i].pref)
+                areaData.push(areaNum)
             }
             }else {
                 areaData = [0,0]
