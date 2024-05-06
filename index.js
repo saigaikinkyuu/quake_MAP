@@ -24,13 +24,13 @@ function mapDraw(num) {
                 // 都道府県ごとに異なる色を割り当てる
                 switch (feature.properties.pref) {
                     case 1:
-                        return null; 
-                    case 13:
-                        return null;
-                    case 46:
-                        return null;
-                    case 47:
-                        return null;
+                        return{
+                            color: "#ffffff",
+                            weight: 1.5,
+                            opacity: 1,
+                            fillColor: "#3a3a3a",
+                            fillOpacity: 1
+                        };
                     default:
                         return {
                             color: "#ffffff",
