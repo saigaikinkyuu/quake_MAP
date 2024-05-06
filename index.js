@@ -16,197 +16,6 @@ function mapDraw(num) {
         imperial: false
     }).addTo(map);
     
-    // GeoJSON データを読み込んで地図に追加
-    $.getJSON("./prefectures.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                console.log(feature.properties.pref + "," + feature.properties.name)
-                // 都道府県ごとに異なる色を割り当てる
-                switch (feature.properties.pref) {
-                    case 1:
-                        return{
-                            color: "#ffffff",
-                            weight: 1.5,
-                            opacity: 1,
-                            fillColor: "#3a3a3a",
-                            fillOpacity: 1
-                        };
-                    default:
-                        return {
-                            color: "#ffffff",
-                            weight: 1.5,
-                            opacity: 1,
-                            fillColor: "#3a3a3a",
-                            fillOpacity: 1
-                        };
-                }
-            }
-        }).addTo(map);
-    });
-
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9012.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9013.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9014.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9461.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9462.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9471.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9472.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9313.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9473.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-    
-    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9474.geojson", function (data) {
-        L.geoJson(data, {
-            style: function(feature) {
-                return{
-                color: "#ffffff",
-                weight: 1.5,
-                opacity: 1,
-                fillColor: "#3a3a3a",
-                fillOpacity: 1
-                }
-            }
-        }).addTo(map);
-    });
-        
         var currentTime = new Date();
         var currentMin = ('0' + currentTime.getMinutes()).slice(-2);
         var currentHour = currentTime.getHours();
@@ -237,263 +46,456 @@ function mapDraw(num) {
         }
 
         // AMeDAS データを読み込み、円を追加
-        $.getJSON("https://www.jma.go.jp/bosai/amedas/data/map/" + currentYear + currentMonth + ("0"+currentDay).slice(-2) + ("0" + currentHour).slice(-2) + "" + min + "000.json", function (datas) {
-            $.getJSON("https://www.jma.go.jp/bosai/amedas/const/amedastable.json", function (data) {
-                function formatDate(date) {
-                    var year = date.getFullYear();
-                    var month = ('0' + (date.getMonth() + 1)).slice(-2);
-                    var day = ('0' + date.getDate()).slice(-2);
-                    var hours = ('0' + date.getHours()).slice(-2);
-                    var minutes = ('0' + date.getMinutes()).slice(-2);
-                    var seconds = ('0' + date.getSeconds()).slice(-2);
-                    return year + '/' + month + '/' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+        $.getJSON("https://api.p2pquake.net/v2/history?codes=556&limit=1", function (datas) {
+            var areas = datas[0].areas
+            var areaData = []
+            var areaNum = 0
+            for(var i = 0;i < areas.length;i++){
+                if("青森" === areas[i].pref){
+                    areaNum = 2
+                }else if("岩手" === areas[i].pref){
+                    areaNum = 3
+                }else if("宮城" === areas[i].pref){
+                    areaNum = 4
+                }else if("秋田" === areas[i].pref){
+                    areaNum = 5
+                }else if("山形" === areas[i].pref){
+                    areaNum = 6
+                }else if("福島" === areas[i].pref){
+                    areaNum = 7
+                }else if("茨城" === areas[i].pref){
+                    areaNum = 8
+                }else if("栃木" === areas[i].pref){
+                    areaNum = 9
+                }else if("群馬" === areas[i].pref){
+                    areaNum = 10
+                }else if("岩手" === areas[i].pref){
+                    areaNum = 11
+                }else if("埼玉" === areas[i].pref){
+                    areaNum = 12
+                }else if("千葉" === areas[i].pref){
+                    areaNum = 13
+                }else if("神奈川" === areas[i].pref){
+                    areaNum = 14
+                }else if("新潟" === areas[i].pref){
+                    areaNum = 15
+                }else if("富山" === areas[i].pref){
+                    areaNum = 16
+                }else if("石川" === areas[i].pref){
+                    areaNum = 17
+                }else if("福井" === areas[i].pref){
+                    areaNum = 18
+                }else if("山梨" === areas[i].pref){
+                    areaNum = 19
+                }else if("長野" === areas[i].pref){
+                    areaNum = 20
+                }else if("岐阜" === areas[i].pref){
+                    areaNum = 21
+                }else if("静岡" === areas[i].pref){
+                    areaNum = 22
+                }else if("愛知" === areas[i].pref){
+                    areaNum = 23
+                }else if("三重" === areas[i].pref){
+                    areaNum = 24
+                }else if("滋賀" === areas[i].pref){
+                    areaNum = 25
+                }else if("京都" === areas[i].pref){
+                    areaNum = 26
+                }else if("大阪" === areas[i].pref){
+                    areaNum = 27
+                }else if("兵庫" === areas[i].pref){
+                    areaNum = 28
+                }else if("奈良" === areas[i].pref){
+                    areaNum = 29
+                }else if("和歌山" === areas[i].pref){
+                    areaNum = 30
+                }else if("鳥取" === areas[i].pref){
+                    areaNum = 31
+                }else if("島根" === areas[i].pref){
+                    areaNum = 32
+                }else if("岡山" === areas[i].pref){
+                    areaNum = 33
+                }else if("広島" === areas[i].pref){
+                    areaNum = 34
+                }else if("山口" === areas[i].pref){
+                    areaNum = 35
+                }else if("徳島" === areas[i].pref){
+                    areaNum = 36
+                }else if("香川" === areas[i].pref){
+                    areaNum = 37
+                }else if("愛媛" === areas[i].pref){
+                    areaNum = 38
+                }else if("高知" === areas[i].pref){
+                    areaNum = 39
+                }else if("福岡" === areas[i].pref){
+                    areaNum = 40
+                }else if("佐賀" === areas[i].pref){
+                    areaNum = 41
+                }else if("長崎" === areas[i].pref){
+                    areaNum = 42
+                }else if("熊本" === areas[i].pref){
+                    areaNum = 43
+                }else if("大分" === areas[i].pref){
+                    areaNum = 44
+                }else if("宮崎" === areas[i].pref){
+                    areaNum = 45
+                }else if("北海道道南" === areas[i].pref){
+                    areaNum = 101
+                }else if("北海道道央" === areas[i].pref){
+                    areaNum = 102
+                }else if("北海道道北" === areas[i].pref){
+                    areaNum = 103
+                }else if("北海道道東" === areas[i].pref){
+                    areaNum = 104
+                }else if("東京" === areas[i].pref){
+                    areaNum = 201
+                }else if("伊豆諸島" === areas[i].pref){
+                    areaNum = 202
+                }else if("鹿児島" === areas[i].pref){
+                    areaNum = 301
+                }else if("奄美群島" === areas[i].pref){
+                    areaNum = 302
+                }else if("沖縄本島" === areas[i].pref){
+                    areaNum = 401
+                }else if("八重山" === areas[i].pref){
+                    areaNum = 404
+                }else if("宮古島" === areas[i].pref){
+                    areaNum = 403
+                }else if("大東島" === areas[i].pref){
+                    areaNum = 402
                 }
-                for (var key in datas) {
-                    function dmsToDd(degrees, minutes, seconds, direction) {
-                        var dd = degrees + minutes / 60 + seconds / (60 * 60);
-                        if (direction == "S" || direction == "W") {
-                            dd = dd * -1;
-                        }
-                        return dd;
-                    }
-                    var markerData = datas[key];
-                    markerData.url = 'https://amedas.jkisyou.com/graph.html#' + key;
-
-                    var latitude = dmsToDd(data[key].lat[0], (data[key].lat[1] + "0").slice(0, 2), (data[key].lat[1] + "0").slice(2), "N");
-                    var longitude = dmsToDd(data[key].lon[0], (data[key].lon[1] + "0").slice(0, 2), (data[key].lon[1] + "0").slice(2), "E");
-
-                    if (datas[key].temp && num === 1) {
-                        if (datas[key].temp[0] <= -5) {
-                            var color = "#969696"
-                            var rgba = "rgba(150, 150, 150,0.3)"
-                        } else if (datas[key].temp[0] <= 0) {
-                            var color = "blue"
-                            var rgba = "rgba(000,000,200,0.3)"
-                        } else if (datas[key].temp[0] <= 5) {
-                            var color = "#0096c8"
-                            var rgba = "rgba(0, 150, 200,0.3)"
-                        } else if (datas[key].temp[0] <= 10) {
-                            var color = "#00c800"
-                            var rgba = "rgba(0, 200, 0 ,0.3)"
-                        } else if (datas[key].temp[0] <= 15) {
-                            var color = "yellow"
-                            var rgba = "rgba(255,255,0,0.3)"
-                        } else if (datas[key].temp[0] <= 20) {
-                            var color = "orange"
-                            var rgba = "rgba(255,165,0,0.3)"
-                        } else if (datas[key].temp[0] <= 25) {
-                            var color = "red"
-                            var rgba = "rgba(255,0,0,0.3)"
-                        } else {
-                            var color = "purple"
-                            var rgba = "rgba(170,0,199,0.3)"
-                        }
-                        var markerL = new L.LatLng(latitude, longitude);
-                        var marker = L.circleMarker(markerL, {
-                            radius: 6,
-                            color: color,
-                            fillColor: rgba,
-                            fillOpacity: 1
-                        }).addTo(map);
-                        // 地図にマーカーを追加
-                        marker.bindPopup("<div style='text-align: center;'>"+data[key].kjName + "(" + data[key].knName + ")<br>" + datas[key].temp[0]+"℃</div>", {
-                            closeButton: false,
-                            zIndexOffset: 10000,
-                            maxWidth: 10000
-                        });
-                        marker.on('mouseover', function (e) {
-                            this.openPopup();
-                        });
-                        marker.on('mouseout', function (e) {
-                            this.closePopup();
-                        });
-                        var url = "https://amedas.jkisyou.com/graph.html#" + key + "" + 1
-                        // マーカーをクリックした際の処理
-                        marker.on('click', (function(url) {
-                            return function(e) {
-                                document.getElementById("chart").style.display = "block"
-                                document.getElementById("site_chart").src = url
-                            };
-                        })(url));
-                    }else if(datas[key].humidity && num === 2){
-                        if (datas[key].humidity[0] <= 10) {
-                            var color = "#785046"
-                            var rgba = "rgba(120, 80, 70,0.3)"
-                        } else if (datas[key].humidity[0] <= 20) {
-                            var color = "#966450"
-                            var rgba = "rgba(150, 100, 80,0.3)"
-                        } else if (datas[key].humidity[0] <= 30) {
-                            var color = "orange"
-                            var rgba = "rgba(255,165,0,0.3)"
-                        } else if (datas[key].humidity[0] <= 40) {
-                            var color = "yellow"
-                            var rgba = "rgba(255,255,0,0.3)"
-                        } else if (datas[key].humidity[0] <= 50) {
-                            var color = "#c8ff00"
-                            var rgba = "rgba(200, 255, 0,0.3)"
-                        } else if (datas[key].humidity[0] <= 60) {
-                            var color = "#00ff00"
-                            var rgba = "rgba(0, 255, 0,0.3)"
-                        } else if (datas[key].humidity[0] <= 70) {
-                            var color = "#00aa00"
-                            var rgba = "rgba(0,170,0,0.3)"
-                        } else if (datas[key].humidity[0] <= 80) {
-                            var color = "#0096c8"
-                            var rgba = "rgba(0, 150, 200,0.3)"
-                        } else if (datas[key].humidity[0] <= 90) {
-                            var color = "blue"
-                            var rgba = "rgba(000,000,200,0.3)"
-                        } else {
-                            //ここまで作業終了「10%」まで色を変更する
-                            var color = "purple"
-                            var rgba = "rgba(170,0,199,0.3)"
-                        }
-                        var markerL = new L.LatLng(latitude, longitude);
-                        var marker = L.circleMarker(markerL, {
-                            radius: 6,
-                            color: color,
-                            fillColor: rgba,
-                            fillOpacity: 1
-                        }).addTo(map);
-                        // 地図にマーカーを追加
-                        marker.bindPopup("<div style='text-align: center;'>"+data[key].kjName + "(" + data[key].knName + ")<br>" + datas[key].humidity[0]+"%</div>", {
-                            closeButton: false,
-                            zIndexOffset: 10000,
-                            maxWidth: 10000
-                        });
-                        marker.on('mouseover', function (e) {
-                            this.openPopup();
-                        });
-                        marker.on('mouseout', function (e) {
-                            this.closePopup();
-                        });
-                        var url = "https://amedas.jkisyou.com/graph.html#" + key + "" + 2
-                        // マーカーをクリックした際の処理
-                        marker.on('click', (function(url) {
-                            return function(e) {
-                                document.getElementById("chart").style.display = "block"
-                                document.getElementById("site_chart").src = url
-                            };
-                        })(url));
-                    }else if(datas[key].precipitation1h && num === 3){
-                        if (datas[key].precipitation1h[0] <= 0.1) {
-                            var color = "#785046"
-                            var rgba = "rgba(120, 80, 70,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 0.5) {
-                            var color = "#966450"
-                            var rgba = "rgba(150, 100, 80,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 1) {
-                            var color = "orange"
-                            var rgba = "rgba(255,165,0,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 5) {
-                            var color = "yellow"
-                            var rgba = "rgba(255,255,0,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 10) {
-                            var color = "#c8ff00"
-                            var rgba = "rgba(200, 255, 0,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 20) {
-                            var color = "#00ff00"
-                            var rgba = "rgba(0, 255, 0,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 30) {
-                            var color = "#00aa00"
-                            var rgba = "rgba(0,170,0,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 50) {
-                            var color = "#0096c8"
-                            var rgba = "rgba(0, 150, 200,0.3)"
-                        } else if (datas[key].precipitation1h[0] <= 100) {
-                            var color = "blue"
-                            var rgba = "rgba(000,000,200,0.3)"
-                        } else {
-                            //ここまで作業終了「10%」まで色を変更する
-                            var color = "purple"
-                            var rgba = "rgba(170,0,199,0.3)"
-                        }
-                        var markerL = new L.LatLng(latitude, longitude);
-                        var marker = L.circleMarker(markerL, {
-                            radius: 6,
-                            color: color,
-                            fillColor: rgba,
-                            fillOpacity: 1
-                        }).addTo(map);
-                        // 地図にマーカーを追加
-                        marker.bindPopup("<div style='text-align: center;'>"+data[key].kjName + "(" + data[key].knName + ")<br>" + datas[key].precipitation1h[0]+"mm</div>", {
-                            closeButton: false,
-                            zIndexOffset: 10000,
-                            maxWidth: 10000
-                        });
-                        marker.on('mouseover', function (e) {
-                            this.openPopup();
-                        });
-                        marker.on('mouseout', function (e) {
-                            this.closePopup();
-                        });
-                        var url = "https://amedas.jkisyou.com/graph.html#" + key + "" + 3
-                        // マーカーをクリックした際の処理
-                        marker.on('click', (function(url) {
-                            return function(e) {
-                                document.getElementById("chart").style.display = "block"
-                                document.getElementById("site_chart").src = url
-                            };
-                        })(url));
-                    }else if (datas[key].temp && num === 4) {
-                        //ここまで作業終了
-                        if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_7").value).substr(0, (document.getElementById("inputHanrei1_7").value).indexOf('〜')))) {
-                            var color = "#969696"
-                            var rgba = "rgba(150, 150, 150,0.3)"
-                        } else if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_6").value).substr(0, (document.getElementById("inputHanrei1_6").value).indexOf('〜')))) {
-                            var color = "blue"
-                            var rgba = "rgba(000,000,200,0.3)"
-                        } else if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_5").value).substr(0, (document.getElementById("inputHanrei1_5").value).indexOf('〜')))) {
-                            var color = "#0096c8"
-                            var rgba = "rgba(0, 150, 200,0.3)"
-                        } else if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_4").value).substr(0, (document.getElementById("inputHanrei1_4").value).indexOf('〜')))) {
-                            var color = "#00c800"
-                            var rgba = "rgba(0, 200, 0 ,0.3)"
-                        } else if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_3").value).substr(0, (document.getElementById("inputHanrei1_3").value).indexOf('〜')))) {
-                            var color = "yellow"
-                            var rgba = "rgba(255,255,0,0.3)"
-                        } else if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_2").value).substr(0, (document.getElementById("inputHanrei1_2").value).indexOf('〜')))) {
-                            var color = "orange"
-                            var rgba = "rgba(255,165,0,0.3)"
-                        } else if (datas[key].temp[0] <= Number((document.getElementById("inputHanrei1_1").value).substr(0, (document.getElementById("inputHanrei1_1").value).indexOf('〜')))) {
-                            var color = "red"
-                            var rgba = "rgba(255,0,0,0.3)"
-                        } else {
-                            var color = "purple"
-                            var rgba = "rgba(170,0,199,0.3)"
-                        }
-                        document.getElementById("inputHanrei1_8").value = "〜" + (document.getElementById("inputHanrei1_7").value).substr(0, (document.getElementById("inputHanrei1_7").value).indexOf('〜'))
-                        var markerL = new L.LatLng(latitude, longitude);
-                        var marker = L.circleMarker(markerL, {
-                            radius: 6,
-                            color: color,
-                            fillColor: rgba,
-                            fillOpacity: 1
-                        }).addTo(map);
-                        // 地図にマーカーを追加
-                        marker.bindPopup("<div style='text-align: center;'>"+data[key].kjName + "(" + data[key].knName + ")<br>" + datas[key].temp[0]+"℃</div>", {
-                            closeButton: false,
-                            zIndexOffset: 10000,
-                            maxWidth: 10000
-                        });
-                        marker.on('mouseover', function (e) {
-                            this.openPopup();
-                        });
-                        marker.on('mouseout', function (e) {
-                            this.closePopup();
-                        });
-                        var url = "https://amedas.jkisyou.com/graph.html#" + key + "" + 1
-                        // マーカーをクリックした際の処理
-                        marker.on('click', (function(url) {
-                            return function(e) {
-                                document.getElementById("chart").style.display = "block"
-                                document.getElementById("site_chart").src = url
-                            };
-                        })(url));
-                    }
-                }
-            });
+                areaData.push(areas[i].pref)
+            }
         });
+    // GeoJSON データを読み込んで地図に追加
+    $.getJSON("./prefectures.geojson", function (data) {
+    // areaDataに含まれる値のセットを作成
+    var areaDataSet = new Set(areaData);
+    
+    L.geoJson(data, {
+        style: function(feature) {
+            console.log(feature.properties.pref + "," + feature.properties.name);
+            // 都道府県ごとに異なる色を割り当てる
+            // areaData配列に同じ値がある場合、それに対応する都道府県はcase 1:と同じスタイルを適用する
+            if (areaDataSet.has(feature.properties.pref)) {
+                return {
+                    color: "#ffffff",
+                    weight: 1.5,
+                    opacity: 1,
+                    fillColor: "#3a3a3a",
+                    fillOpacity: 1
+                };
+            } else {
+                // areaDataに含まれない場合は、デフォルトのスタイルを適用
+                return {
+                    color: "#ffffff",
+                    weight: 1.5,
+                    opacity: 1,
+                    fillColor: "#3a3a3a",
+                    fillOpacity: 1
+                };
+            }
+        }
+    }).addTo(map);
+});
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(102)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9012.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(101)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9013.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(103)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9014.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(104)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    }
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9461.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(301)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9462.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(302)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9471.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(401)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9472.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(402)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9473.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(403)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9474.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(404)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9131.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(201)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9132.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+               if(areaDataSet.has(202)){
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "yellow",
+                fillOpacity: 1
+                }
+               }else{
+                return{
+                color: "#ffffff",
+                weight: 1.5,
+                opacity: 1,
+                fillColor: "#3a3a3a",
+                fillOpacity: 1
+                }
+               }
+            }
+        }).addTo(map);
+    });
+        
     };
 
 function changeMap(i) {
