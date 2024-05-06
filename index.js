@@ -8,8 +8,6 @@ function mapDraw(num) {
 		maxZoom: 9 // 最大ズームレベルを7に設定
 	});
 
-	var initialLatLng = L.latLng("35.39", "139.44");
-	map.setView(initialLatLng, 7);
 
 	L.control.scale({
 		maxWidth: 150,
@@ -527,6 +525,10 @@ function mapDraw(num) {
 							}
 						}).addTo(map);
 					});
+				if((areaDataSet.has(101)) || (areaDataSet.has(102)) || (areaDataSet.has(103)) || (areaDataSet.has(104)) || areaData.length >= 4){
+					var initialLatLng = L.latLng(datas[0].earthquake.hypocenter.latitude, datas[0].earthquake.hypocenter.longitude);
+					map.setView(initialLatLng, 4);
+				}
 		} else {
 			areaData = [0, 0]
 		}
