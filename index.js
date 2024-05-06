@@ -330,8 +330,7 @@ function mapDraw(num) {
                 }
             });
         });
-    });
-}
+    };
 
 function changeMap(i) {
     console.log("C,"+i)
