@@ -164,6 +164,7 @@ function mapDraw(num) {
                 }else if("八重山" === areas[i].pref){
                     areaNum = 404
                 }else if("宮古島" === areas[i].pref){
+                    console.log("成功！")
                     areaNum = 403
                 }else if("大東島" === areas[i].pref){
                     areaNum = 402
@@ -409,6 +410,7 @@ function mapDraw(num) {
         L.geoJson(data, {
             style: function(feature) {
                if(areaDataSet.has(403)){
+                console.log("成功！")
                 return{
                 color: "#ffffff",
                 weight: 1.5,
@@ -417,6 +419,7 @@ function mapDraw(num) {
                 fillOpacity: 1
                 }
                }else{
+                   console.log("失敗")
                 return{
                 color: "#ffffff",
                 weight: 1.5,
