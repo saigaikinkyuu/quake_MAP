@@ -46,8 +46,8 @@ function mapDraw(num) {
             min = currentMin.slice(0,1)
         }
 
-        // AMeDAS データを読み込み、円を追加
-        $.getJSON("https://api.p2pquake.net/v2/history?codes=556&limit=1", function (datas) {
+        // AMeDAS データを読み込み、円を追加(https://api.p2pquake.net/v2/history?codes=556&limit=1)
+        $.getJSON("https://api-v2-sandbox.p2pquake.net/v2/history?codes=556&limit=1", function (datas) {
             if(datas[0]){
             var areas = datas[0].areas
             areaData = []
