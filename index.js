@@ -47,6 +47,7 @@ function mapDraw(num) {
 
         // AMeDAS データを読み込み、円を追加
         $.getJSON("https://api.p2pquake.net/v2/history?codes=556&limit=1", function (datas) {
+            if(datas[0]){
             var areas = datas[0].areas
             var areaData = []
             var areaNum = 0
@@ -165,6 +166,9 @@ function mapDraw(num) {
                     areaNum = 402
                 }
                 areaData.push(areas[i].pref)
+            }
+            }else {
+                var areaData = [0,0]
             }
         });
     // GeoJSON データを読み込んで地図に追加
