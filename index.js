@@ -16,19 +16,32 @@ function mapDraw(num) {
         imperial: false
     }).addTo(map);
 
-    // GeoJSON データを読み込んで地図に追加
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
     $.getJSON("./prefectures.geojson", function (data) {
         L.geoJson(data, {
-            if(data.features[0].properties.name === "北海道"){
-              style: {
-                  "color": "#ffffff",
-                  "weight": 1.5,
-                  "opacity": 1,
-                  "fillColor": "#3a3a3a",
-                  "fillOpacity": 1
-              }
-          }
+            style: function(feature) {
+                // 都道府県ごとに異なる色を割り当てる
+                switch (feature.properties.pref) {
+                    case 1:
+                        return {
+                            fillColor: "#ff0000", // 北海道を赤色で塗りつぶす
+                            color: "#ffffff",
+                            weight: 1.5,
+                            opacity: 1,
+                            fillOpacity: 0.7
+                        };
+                    default:
+                        return {
+                            fillColor: "#ffffff", // デフォルトの色
+                            color: "yellow",
+                            weight: 1.5,
+                            opacity: 1,
+                            fillOpacity: 0.7
+                        };
+                }
+            }
         }).addTo(map);
+    });
         
         var currentTime = new Date();
         var currentMin = ('0' + currentTime.getMinutes()).slice(-2);
