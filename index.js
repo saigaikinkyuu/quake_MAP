@@ -20,29 +20,142 @@ function mapDraw(num) {
     $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
-                console.log(feature.properties.pref + "," + feature.properties.name)
-                // 都道府県ごとに異なる色を割り当てる
-                switch (feature.properties.pref) {
-                    case 1:
-                        return {
-                            fillColor: "#ff0000", // 北海道を赤色で塗りつぶす
-                            color: "#ffffff",
-                            weight: 1.5,
-                            opacity: 1,
-                            fillOpacity: 0.7
-                        };
-                    default:
-                        return {
-                            fillColor: "#ffffff", // デフォルトの色
-                            color: "yellow",
-                            weight: 1.5,
-                            opacity: 1,
-                            fillOpacity: 0.7
-                        };
-                }
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
             }
         }).addTo(map);
     });
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9012.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9013.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9014.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9461.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9462.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9471.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9472.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9473.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    
+    // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9474.geojson", function (data) {
+        L.geoJson(data, {
+            style: function(feature) {
+                "color": "#ffffff",
+                "weight": 1.5,
+                "opacity": 1,
+                "fillColor": "#3a3a3a",
+                "fillOpacity": 1
+            }
+        }).addTo(map);
+    });
+    for(var pN = 2;pN<46;pN++){    
+        // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
+        $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9" + ("0" + pN).slice(-2) + "0.geojson", function (data) {
+            L.geoJson(data, {
+                style: function(feature) {
+                    "color": "#ffffff",
+                    "weight": 1.5,
+                    "opacity": 1,
+                    "fillColor": "#3a3a3a",
+                    "fillOpacity": 1
+                }
+            }).addTo(map);
+        });
+    }
         
         var currentTime = new Date();
         var currentMin = ('0' + currentTime.getMinutes()).slice(-2);
