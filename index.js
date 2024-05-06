@@ -54,6 +54,7 @@ function mapDraw(num) {
             var areas = datas[0].areas
             var areaNum = 0
             for(var i = 0;i < areas.length;i++){
+                console.log(areas[i].pref)
                 if("青森" === areas[i].pref){
                     areaNum = 2
                 }else if("岩手" === areas[i].pref){
