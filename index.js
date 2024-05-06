@@ -187,7 +187,7 @@ function mapDraw(num) {
 									color: "#ffffff",
 									weight: 1.5,
 									opacity: 1,
-									fillColor: "#3a3a3a",
+									fillColor: "yellow",
 									fillOpacity: 1
 								};
 							} else {
