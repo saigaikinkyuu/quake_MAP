@@ -20,9 +20,9 @@ function mapDraw(num) {
     $.getJSON("./prefectures.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
+                console.log(feature.properties.pref + "," + feature.properties.name)
                 // 都道府県ごとに異なる色を割り当てる
                 switch (feature.properties.pref) {
-                        console.log(feature.properties.pref + "," + feature.properties.name)
                     case 1:
                         return {
                             fillColor: "#ff0000", // 北海道を赤色で塗りつぶす
