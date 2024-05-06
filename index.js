@@ -17,7 +17,7 @@ function mapDraw(num) {
     }).addTo(map);
 
     // GeoJSON データを読み込んで地図に追加// GeoJSON データを読み込んで地図に追加
-    $.getJSON("./prefectures.geojson", function (data) {
+    $.getJSON("https://geoshape.ex.nii.ac.jp/jma/resource/AreaForecastLocalEEW/20190125/9011.geojson", function (data) {
         L.geoJson(data, {
             style: function(feature) {
                 console.log(feature.properties.pref + "," + feature.properties.name)
