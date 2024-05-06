@@ -171,10 +171,6 @@ function mapDraw(num) {
                 }
                 areaData.push(areaNum)
             }
-            }else {
-                areaData = [0,0]
-            }
-        });
     console.log(areaData)
     var areaDataSet = new Set(areaData);
     console.log(areaDataSet)
@@ -507,6 +503,10 @@ function mapDraw(num) {
         }).addTo(map);
     });
 }
+            }else {
+                areaData = [0,0]
+            }
+        });
 
 function changeMap(i) {
     console.log("C,"+i)
