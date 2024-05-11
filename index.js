@@ -5,7 +5,15 @@ function mapDraw(num) {
 	map = L.map('map', {
 		zoomControl: false,
 		minZoom: 7, // 最低ズームレベルを4に設定
-		maxZoom: 9 // 最大ズームレベルを7に設定
+		maxZoom: 9, // 最大ズームレベルを7に設定
+		dragging:false, // マウスまたはタッチのドラッグで、マップを移動するかしないか。
+		touchZoom:false, // クリックまたはタッチで、マップをズームするかしないか。
+		scrollWheelZoom:false, // マウスのホイール操作で 、マップをズームするかしないか。
+		doubleClickZoom:false, // ダブルクリックで、マップをズームするかしないか。
+		boxZoom:false, // シフトキーを押しながらマウスをドラッグすることで、マップの表示範囲をズームするかしないか。
+		tap:false, // タップでマップのズーム操作をするかしないか。
+		keyboard:false, // キーボードの矢印又はプラス・マイナスキーでのマップ操作の可否。
+		zoomControl:false, // ズームコントロールの表示、非表示。
 	});
 
 
@@ -45,7 +53,7 @@ function mapDraw(num) {
 	}
 
 	// AMeDAS データを読み込み、円を追加(https://api.p2pquake.net/v2/history?codes=556&limit=1)
-	$.getJSON("https://api-v2-sandbox.p2pquake.net/v2/history?codes=556&limit=1&offset=2",
+	$.getJSON("https://api.p2pquake.net/v2/history?codes=566&limit=1",
 		function(datas) {
 			console.log(datas)
 			if (datas[0]) {
