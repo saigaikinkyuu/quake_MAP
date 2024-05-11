@@ -553,6 +553,7 @@ function mapDraw(num) {
 				});
 				var shingenIcon = L.marker(shingenLatLng, {icon: shingenIconImage }).addTo(map);
 			} else {
+				map.setView("36.0","138.0", 1);
 				areaData = [0, 0]
 				var areaDataSet = new Set(areaData);
 					// GeoJSON データを読み込んで地図に追加
